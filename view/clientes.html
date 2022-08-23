@@ -9,7 +9,7 @@
   <body>
     <fieldset class="campo">
       <legend>Cadastro de Clientes</legend>
-      <form action="../controller/salvar.php" method="POST" class="formulario">
+      <form action="../controller/salvar_cli.php" method="POST" class="formulario">
         <!-- salvar.php vai salvar o q esta dentro do form -->
         <label for="cliente">Clientes:</label><br />
         <input type="text" id="cliente" name="cliente" required /><br />
@@ -58,6 +58,7 @@
 
         <input type="reset" value="limpar" name="limpar" />
         <input type="submit" value="Enviar" name="enviar" />
+        <a href="index.html"><input type="button" value="Voltar"></a>
       </form>
     </fieldset>
   </body>
