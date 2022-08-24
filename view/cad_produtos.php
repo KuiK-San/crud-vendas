@@ -25,7 +25,7 @@
             <input type="text" name="descricao" id="" class="campo" required>
 
             <label for="descricao">Valor do produto</label>
-            <input type="number" name="descricao" placeholder="(usar '.' para decimal e não colocar 'R$')" required id="" class="campo">
+            <input type="number" name="valor" placeholder="(usar '.' para decimal e não colocar 'R$')" required id="" class="campo">
 
             <label for="fornecedor">Fornecedor</label>
             <select name="fornecedor" id="uf" class="campo" required>
