@@ -1,5 +1,5 @@
 <?php
-$cliente = $_POST['cliente'];
+$cliente = mb_strtolower($_POST['cliente'], 'UFT-8');
 $cpf = $_POST['cpf'];
 $cep = $_POST['cep'];
 $endereco = $_POST['endereco'];

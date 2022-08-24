@@ -1,6 +1,7 @@
 <?php
 
 $nome = $_POST['nome'];
+$nome = mb_strtolower($nome, 'UTF-8');
 $cnpj = $_POST['cnpj'];
 $telefone = $_POST['telefone'];
 
