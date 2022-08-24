@@ -1,0 +1,36 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.formulario{
+    width: 100%;
+    border: 0.5px solid;
+    padding: 30px;
+    border-radius: 10px;
+    padding-right: 5%;
+    background-color: rgba(0, 0, 0, 0.266);
+    
+}
+legend{
+    text-align: center;
+    font-size: 20px;
+}
+.campo{
+    width: 100%;
+    margin-top: 1%;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+.botao{
+    width: 102.3%;
+    margin-top: 1%;
+    padding: 1%;
+}
+#uf{
+    width: 102.3%;
+}
