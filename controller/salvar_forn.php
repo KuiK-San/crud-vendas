@@ -7,9 +7,9 @@ $telefone = $_POST['telefone'];
 
 include('../conect/conexao.php');
 
-$sql = "INSERT INTO `fornecedores` (`nome_forn`, `cnpj_forn`, `telefone`) VALUES ('$nome','$cnpj','$telefone')";
+$query = "INSERT INTO `fornecedores` (`nome_forn`, `cnpj_forn`, `telefone`) VALUES ('$nome','$cnpj','$telefone')";
 
-$query = mysqli_query($conexao, $sql);
+$sql = mysqli_query($conexao, $query);
 
 header('location: ../view/index.html')
 

@@ -5,9 +5,9 @@ $cpf = $_POST['cpf'];
 
 include('../conect/conexao.php');
 
-$sql = "INSERT INTO `vendedores`(`nome_vend`, `cpf_vend`) VALUES ('$nome','$cpf')";
+$query = "INSERT INTO `vendedores`(`nome_vend`, `cpf_vend`) VALUES ('$nome','$cpf')";
 
-$query = mysqli_query($conexao, $sql);
+$sql = mysqli_query($conexao, $query);
 
 header('location: ../view/index.html');
 
