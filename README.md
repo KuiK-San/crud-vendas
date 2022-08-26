@@ -1,1 +1,1 @@
-# crud-vendas da uc3 com professor JOSÉ CARLOR
+# crud-vendas da uc3 com professor JOSÉ CARLOS
