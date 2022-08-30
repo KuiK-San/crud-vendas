@@ -42,7 +42,7 @@
                 <td><?php echo $row['fone_clie'];?></td>
                 <td><?php echo $row['email_clie'];?></td>
                 <td><a href="../view/altera_cli.php?id=<?=$row['id_clie']?>">Editar</a></td>
-                <td><a href="../controller/exclui.php?id=<?=$row['id_clie']?>">Excluir</a></td>
+                <td><a href="../controller/exclui.php?id=<?=$row['id_clie']?>&tabela=clientes&volta=view/listaclientes.php&id_name=id_clie">Excluir</a></td>
             </tr>
                 
            <?php }

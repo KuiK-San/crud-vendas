@@ -1,4 +1,5 @@
 <?php
+$id = $_GET['id'];
 $cliente = $_POST['cliente'];
 $cpf = $_POST['cpf'];
 $cep = $_POST['cep'];
@@ -9,10 +10,10 @@ $telefone = $_POST['fone'];
 $email = $_POST['email'];
 
 include("../conect/conexao.php");
-$query = "INSERT INTO `clientes`(`nome_clie`, `cpf_clie`, `cep_clie`, `end_clie`, `cidade_clie`, `uf_clie`, `fone_clie`, `email_clie`) VALUES ('$cliente','$cpf','$cep','$endereco','$cidade','$estado','$telefone','$email')";
+$query = "UPDATE `clientes` SET `nome_clie`='$cliente',`cpf_clie`='$cpf',`cep_clie`='$cep',`end_clie`='$endereco',`cidade_clie`='$cidade',`uf_clie`='$estado',`fone_clie`='$telefone',`email_clie`='$email' WHERE `id_clie` = $id";
 
 mysqli_query($conexao, $query);
 
-header("location: ../view/index.html");
+header("location: ../view/listaclientes.php");
 
 ?>

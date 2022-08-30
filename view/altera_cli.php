@@ -21,7 +21,7 @@
 <body>
 <fieldset class="formulario">
         <legend>Cadastro de clientes</legend>
-        <form action="../controller/salvar_cli.php" method="POST">
+        <form action="../controller/altera_cli.php?id=<?= $id ?>" method="POST">
             <label for="cliente" >Clientes:</label>
             <input type="text" id="cliente" name="cliente" class="campo" value="<?= $row['nome_clie']?>" required />
             <label for="cpf" >CPF:</label>
@@ -585,9 +585,9 @@
                 ?>
             </select>
             <label for="telefone" >Telefone:</label><br />
-            <input type="text" id="fone" name="fone" class="campo" required />
+            <input type="text" id="fone" name="fone" class="campo" value="<?= $row['fone_clie']?>" required />
             <label for="email" >E-mail:</label>
-            <input type="email" id="email" name="email" class="campo" required />
+            <input type="email" id="email" name="email" class="campo" value="<?= $row['email_clie']?>" required />
             <input type="reset" value="Limpar" class="botao" name="limpar" />
             <input type="submit" value="Enviar" class="botao" name="enviar" />
             <a href="index.html"><input type="button" class="botao" value="Voltar"></a>
