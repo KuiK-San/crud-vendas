@@ -8,8 +8,7 @@
     $sql = mysqli_query($conexao, $query);
 
     $row = mysqli_fetch_array($sql);
-    $estado = strtolower($row['uf_clie']);
-?>
+    ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -38,26 +37,26 @@
             <select name="estado"  class="campo" id="uf">
 
                 <option id="" value="">selecione o Estado</option>
-                <option id="ac" value="Ac">Acre</option>
-                <option id="al" value="Al">Alagoas</option>
-                <option id="ap" value="Ap">Amapá</option>
-                <option id="am" value="Am">Amazonas</option>
-                <option id="ba" value="Ba">Bahia</option>
-                <option id="df" value="Df">Distrito federal</option>
-                <option id="es" value="Es">Espirito Santo</option>
-                <option id="go" value="Go">Goiás</option>
-                <option id="ma" value="Ma">Maranhão</option>
-                <option id="mt" value="Mt">Mato Grosso</option>
-                <option id="ms" value="Ms">Mato Grosso do Sul</option>
-                <option id="mg" value="Mg">Minas Gerais</option>
-                <option id="pa" value="Pa">Pará</option>
-                <option id="pr" value="Pr">Paraná</option>
-                <option id="pe" value="Pe">Pernambuco</option>
-                <option id="pi" value="Pi">Piauí</option>
-                <option id="rs" value="Rs">Rio Grande Do Sul</option>
-                <option id="rj" value="Rj">Rio de Janeiro</option>
-                <option id="sp" value="Sp">São Paulo</option>
-                <option id="sc" value="Sc">Santa Catarina</option>
+                <option id="ac" value="AC">Acre</option>
+                <option id="al" value="AL">Alagoas</option>
+                <option id="ap" value="AP">Amapá</option>
+                <option id="am" value="AM">Amazonas</option>
+                <option id="ba" value="BA">Bahia</option>
+                <option id="df" value="DF">Distrito federal</option>
+                <option id="es" value="ES">Espirito Santo</option>
+                <option id="go" value="GO">Goiás</option>
+                <option id="ma" value="MA">Maranhão</option>
+                <option id="mt" value="MT">Mato Grosso</option>
+                <option id="ms" value="MS">Mato Grosso do Sul</option>
+                <option id="mg" value="MG">Minas Gerais</option>
+                <option id="pa" value="PA">Pará</option>
+                <option id="pr" value="PR">Paraná</option>
+                <option id="pe" value="PE">Pernambuco</option>
+                <option id="pi" value="PI">Piauí</option>
+                <option id="rs" value="RS">Rio Grande Do Sul</option>
+                <option id="rj" value="RJ">Rio de Janeiro</option>
+                <option id="sp" value="SP">São Paulo</option>
+                <option id="sc" value="SC">Santa Catarina</option>
 
             </select>
             <label for="telefone" >Telefone:</label><br />
