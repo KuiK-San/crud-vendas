@@ -41,10 +41,10 @@
 
                     $forn = mysqli_fetch_array($sql_forn);
 
-                    echo $forn[0];
+                    echo $forn['nome_forn'];
 
                 ?></td>
-                <td><a href="../view/altera_cli.php?id=<?=$row['id_prod']?>">Editar</a></td>
+                <td><a href="../view/altera_prod.php?id=<?=$row['id_prod']?>">Editar</a></td>
                 <td><a href="../controller/exclui.php?id=<?=$row['id_prod']?>&tabela=produtos&volta=view/lista_prod.php&id_name=id_prod">Excluir</a></td>
             </tr>
                 

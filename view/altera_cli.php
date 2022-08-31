@@ -65,7 +65,7 @@
             <input type="email" id="email" name="email" class="campo" value="<?= $row['email_clie']?>" required />
             <input type="reset" value="Limpar" class="botao" name="limpar" />
             <input type="submit" value="Enviar" class="botao" name="enviar" />
-            <a href="listaclientes.php"><input type="button" class="botao" value="Voltar"></a>
+            <a href="lista_clie.php"><input type="button" class="botao" value="Voltar"></a>
         </form>
     </fieldset>
     <script>
