@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Cadastro de Produtos</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
             <input type="text" name="descricao" id="" class="campo" required>
 
             <label for="descricao">Valor do produto</label>
-            <input type="number" name="valor" placeholder="(usar '.' para decimal e não colocar 'R$')" required id="" class="campo">
+            <input type="text" name="valor" placeholder="" required id="valor" class="campo">
 
             <label for="fornecedor">Fornecedor</label>
             <select name="fornecedor" id="uf" class="campo" required>
@@ -46,6 +47,9 @@
         </form>
 
     </fieldset>
+    
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/mascara.js"></script>
     
 </body>
 </html>

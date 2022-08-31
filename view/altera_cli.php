@@ -17,6 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../view/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Alterar cadastro de clientes</title>
 </head>
 <body>
@@ -73,5 +74,7 @@
         document.querySelector(`#${estado}`).setAttribute('selected', 'selected')
 
     </script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/mascara.js"></script>
 </body>
 </html>
