@@ -10,6 +10,6 @@ $query = "UPDATE `produtos` SET `desc_prod`='$descricao',`valor_prod`='$valor',`
 
 $sql = mysqli_query($conexao, $query);
 
-header('location: ../view/lista_prod.php');
+header('location: ../../view/lists/lista_prod.php');
 
 ?>

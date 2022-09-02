@@ -1,7 +1,7 @@
 <?php
     $id = $_GET['id'];
 
-    include('../conect/conexao.php');
+    include('../../conect/conexao.php');
 
     $query = "SELECT * FROM `clientes` WHERE `id_clie` = $id";
 
@@ -15,14 +15,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../view/css/style.css">
+    <link rel="stylesheet" href="../../view/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Alterar cadastro de clientes</title>
 </head>
 <body>
 <fieldset class="formulario">
         <legend>Cadastro de clientes</legend>
-        <form action="../controller/altera_cli.php?id=<?= $id ?>" method="POST">
+        <form action="../../controller/altera/altera_cli.php?id=<?= $id ?>" method="POST">
             <label for="cliente" >Clientes:</label>
             <input type="text" id="cliente" name="cliente" class="campo" value="<?= $row['nome_clie']?>" required />
             <label for="cpf" >CPF:</label>
@@ -65,7 +65,7 @@
             <input type="email" id="email" name="email" class="campo" value="<?= $row['email_clie']?>" required />
             <input type="reset" value="Limpar" class="botao" name="limpar" />
             <input type="submit" value="Enviar" class="botao" name="enviar" />
-            <a href="lista_clie.php"><input type="button" class="botao" value="Voltar"></a>
+            <a href="../lists/lista_clie.php"><input type="button" class="botao" value="Voltar"></a>
         </form>
     </fieldset>
     <script>
@@ -73,7 +73,7 @@
         document.querySelector(`#${estado}`).setAttribute('selected', 'selected')
 
     </script>
-    <script src="js/jquery.mask.js"></script>
-    <script src="js/mascara.js"></script>
+    <script src="../js/jquery.mask.js"></script>
+    <script src="../js/mascara.js"></script>
 </body>
 </html>

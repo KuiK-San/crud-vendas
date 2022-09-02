@@ -10,6 +10,6 @@ $query = "UPDATE `fornecedores` SET `nome_forn`='$nome',`cnpj_forn`='$cnpj',`tel
 
 $sql = mysqli_query($conexao, $query);
 
-header('location: ../view/lista_fornecedor.php');
+header('location: ../../view/lists/lista_fornecedor.php');
 
 ?>

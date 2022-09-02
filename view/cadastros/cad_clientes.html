@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Cadastro de clientes</title>
 </head>
@@ -12,7 +12,7 @@
     
     <fieldset class="formulario">
         <legend>Cadastro de clientes</legend>
-        <form action="../controller/salvar_cli.php" method="POST">
+        <form action="../../controller/salvar/salvar_cli.php" method="POST">
 
             <label for="cliente" >Clientes:</label>
             <input type="text" id="cliente" name="cliente" class="campo" required />
@@ -71,11 +71,11 @@
 
             <input type="reset" value="Limpar" class="botao" name="limpar" />
             <input type="submit" value="Enviar" class="botao" name="enviar" />
-            <a href="index.html"><input type="button" class="botao" value="Voltar"></a>
+            <a href="../index.html"><input type="button" class="botao" value="Voltar"></a>
         </form>
     </fieldset>
 
-    <script src="js/jquery.mask.js"></script>
-    <script src="js/mascara.js"></script>
+    <script src="../js/jquery.mask.js"></script>
+    <script src="../js/mascara.js"></script>
 </body>
 </html>

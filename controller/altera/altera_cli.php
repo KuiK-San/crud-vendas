@@ -14,6 +14,6 @@ $query = "UPDATE `clientes` SET `nome_clie`='$cliente',`cpf_clie`='$cpf',`cep_cl
 
 mysqli_query($conexao, $query);
 
-header("location: ../view/lista_clie.php");
+header("location: ../../view/lists/lista_clie.php");
 
 ?>

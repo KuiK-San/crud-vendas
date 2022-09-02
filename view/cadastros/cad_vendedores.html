@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Vendedores</title>
 </head>
 <body>
     <fieldset class="formulario">
-        <legend>Cadastro de Vandedores</legend>
-        <form action="../controller/salvar_vend.php" method="post">
+        <legend>Cadastro de Vendedores</legend>
+        <form action="../../controller/salvar/salvar_vend.php" method="post">
             <label for="nome">Nome</label>
             <input type="text" name="nome" class="campo">
 
@@ -20,11 +20,11 @@
 
             <input type="reset" class="botao" value="limpar" name="limpar">
             <input type="submit" class="botao" value="Enviar" name="enviar">
-            <a href="index.html"><input type="button" class="botao" value="Voltar"></a>
+            <a href="../index.html"><input type="button" class="botao" value="Voltar"></a>
         </form>
     </fieldset>
     
-    <script src="js/jquery.mask.js"></script>
-    <script src="js/mascara.js"></script>
+    <script src="../js/jquery.mask.js"></script>
+    <script src="../js/mascara.js"></script>
 </body>
 </html>

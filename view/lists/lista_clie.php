@@ -7,7 +7,7 @@
     <title>Lista de clientes</title>
 </head>
 <body>
-    <a href="index.html">voltar</a>
+    <a href="../index.html">voltar</a>
     <h1>Lista de clientes</h1>
     <table border='1'>
         <thead>
@@ -24,7 +24,7 @@
         </thead>
 
         <?php
-            include('../conect/conexao.php');
+            include('../../conect/conexao.php');
             
             $query = "SELECT * FROM `clientes`";
             $sql = mysqli_query($conexao, $query);
@@ -41,8 +41,8 @@
                 <td><?php echo $row['uf_clie'];?></td>
                 <td><?php echo $row['fone_clie'];?></td>
                 <td><?php echo $row['email_clie'];?></td>
-                <td><a href="../view/altera_cli.php?id=<?=$row['id_clie']?>">Editar</a></td>
-                <td><a href="../controller/exclui.php?id=<?=$row['id_clie']?>&tabela=clientes&volta=view/lista_clie.php&id_name=id_clie">Excluir</a></td>
+                <td><a href="../../view/alteracao/altera_cli.php?id=<?=$row['id_clie']?>">Editar</a></td>
+                <td><a href="../../controller/exclui.php?id=<?=$row['id_clie']?>&tabela=clientes&volta=view/lista_clie.php&id_name=id_clie">Excluir</a></td>
             </tr>
                 
            <?php }

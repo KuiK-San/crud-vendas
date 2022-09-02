@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Cadastro de Produtos</title>
 </head>
 <body>
     <?php
-        include('../conect/conexao.php');
+        include('../../conect/conexao.php');
 
         $query = "SELECT * FROM `fornecedores`";
 
@@ -21,7 +21,7 @@
 
     <fieldset class="formulario">
         <legend>Cadastro de produtos</legend>
-        <form action="../controller/salvar_prod.php" method="post">
+        <form action="../../controller/salvar/salvar_prod.php" method="post">
             <label for="descricao">Descrição do Produto</label>
             <input type="text" name="descricao" id="" class="campo" required>
 
@@ -43,13 +43,13 @@
 
             <input type="reset" class="botao" value="limpar" name="limpar">
             <input type="submit" class="botao" value="Enviar" name="enviar">
-            <a href="index.html"><input type="button" class="botao" value="Voltar"></a>
+            <a href="../index.html"><input type="button" class="botao" value="Voltar"></a>
         </form>
 
     </fieldset>
     
-    <script src="js/jquery.mask.js"></script>
-    <script src="js/mascara.js"></script>
+    <script src="../js/jquery.mask.js"></script>
+    <script src="../js/mascara.js"></script>
     
 </body>
 </html>

@@ -7,7 +7,7 @@
     <title>Lista de Produtos</title>
 </head>
 <body>
-    <a href="index.html">voltar</a>
+    <a href="../index.html">voltar</a>
     <h1>Lista de clientes</h1>
     <table border='1'>
         <thead>
@@ -19,7 +19,7 @@
         </thead>
 
         <?php
-            include('../conect/conexao.php');
+            include('../../conect/conexao.php');
             
             $query = "SELECT * FROM `produtos`";
             $sql = mysqli_query($conexao, $query);
@@ -32,7 +32,7 @@
                 <td><?php echo $row['valor_prod'];?></td>
                 <td><?php 
 
-                    include('../conect/conexao.php');
+                    include('../../conect/conexao.php');
 
                     $id_forn = $row['id_forn'];
 
@@ -44,8 +44,8 @@
                     echo $forn['nome_forn'];
 
                 ?></td>
-                <td><a href="../view/altera_prod.php?id=<?=$row['id_prod']?>">Editar</a></td>
-                <td><a href="../controller/exclui.php?id=<?=$row['id_prod']?>&tabela=produtos&volta=view/lista_prod.php&id_name=id_prod">Excluir</a></td>
+                <td><a href="../../view/alteracao/altera_prod.php?id=<?=$row['id_prod']?>">Editar</a></td>
+                <td><a href="../../controller/exclui.php?id=<?=$row['id_prod']?>&tabela=produtos&volta=view/lista_prod.php&id_name=id_prod">Excluir</a></td>
             </tr>
                 
            <?php }
